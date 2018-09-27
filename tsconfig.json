@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "oocx-ng": [
+        "dist/oocx-ng"
+      ],
+      "oocx-ng/*": [
+        "dist/oocx-ng/*"
+      ]
+    }
   }
 }
