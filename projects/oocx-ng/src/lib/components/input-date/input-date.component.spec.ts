@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OocxNgComponent } from './oocx-ng.component';
+import { InputDateComponent } from './input-date.component';
 
-describe('OocxNgComponent', () => {
-  let component: OocxNgComponent;
-  let fixture: ComponentFixture<OocxNgComponent>;
+describe('InputDateComponent', () => {
+  let component: InputDateComponent;
+  let fixture: ComponentFixture<InputDateComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OocxNgComponent ]
+      declarations: [ InputDateComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OocxNgComponent);
+    fixture = TestBed.createComponent(InputDateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

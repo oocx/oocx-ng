@@ -1,0 +1,59 @@
+@import '../../oocx-ng.less';
+
+:host {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: column;
+    position: relative;
+}
+
+input {
+    box-sizing: border-box;
+    margin: 0;
+    border: @input-border;
+    flex: 1 0;
+    padding: 4px;
+    width: 100%;
+    max-width: 100%;
+}
+
+ul {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    padding: 0;
+    border: 1px solid #a0a0a0;
+    list-style: none;
+    min-width: 100%;
+    box-sizing: border-box;
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #fff;
+    z-index: 100;
+}
+
+li {
+    padding: 4px;
+    width: 100%;
+    white-space: nowrap;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+li /deep/ * {
+    cursor: pointer !important;
+}
+
+li:hover {
+    background: #f0f0ff;
+    color: #000;
+}
+
+.selected {
+    background: #505090;
+    color: #fff;
+}

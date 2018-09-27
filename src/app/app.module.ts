@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { OocxNgModule } from './../../projects/oocx-ng/src/lib/oocx-ng.module';
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +9,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    OocxNgModule
   ],
   providers: [],
   bootstrap: [AppComponent]

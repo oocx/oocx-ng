@@ -1,0 +1,17 @@
+<div class="monthYear">{{monthNames[month - 1]}} {{year}}</div>
+<div class="prev" (click)="prev()" tabindex="-1">&lt;</div>
+<div class="next" (click)="next()" tabindex="-1">&gt;</div>
+<div *ngFor="let dayName of dayNames; let idx = index;" class="dayName" [style.grid-column]="idx + 1" [style.grid-row]="2">{{dayName}}</div>
+<ng-container *ngFor="let day of days">
+  <div *ngIf="getDay(day) === 1" class="week"
+    [style.grid-column]="getDay(day)"
+    [style.grid-row]="day.week + 2" >{{getWeek(day)}}</div>
+  <div class="day"
+    tabindex="-1"
+    [style.grid-column]="getDay(day) + 1"
+    [style.grid-row]="day.week + 2" 
+    [class.selected]="isSelected(day)"
+    [class.otherMonth]="day.getMonth() != date.getMonth()"
+    (click)="selectedDate = day">
+    {{day.getDate()}}</div>
+</ng-container>

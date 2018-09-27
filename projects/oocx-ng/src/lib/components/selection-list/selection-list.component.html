@@ -1,0 +1,1 @@
+<button *ngFor="let option of options" [class.selected]="selection === option" (click)="selection = option">{{displayValue(option)}}</button><ng-content></ng-content>

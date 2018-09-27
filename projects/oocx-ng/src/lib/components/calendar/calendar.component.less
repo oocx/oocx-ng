@@ -1,0 +1,62 @@
+@import '../../oocx-ng.less';
+
+:host {
+    display: grid;
+    grid-template-columns: min-content min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-rows: 32px min-content;
+    user-select: none;
+}
+
+div {
+    padding: 6px;
+    cursor: pointer;
+    font-family: @font-family;
+}
+
+div:hover {
+    background-color: #e0e0e0;
+}
+
+.monthYear, .prev, .next {
+    grid-row: 1;
+}
+
+.monthYear {
+    grid-column: 1 / span 6;
+    cursor: default;
+}
+
+.week,
+.dayName {
+    cursor: default;
+    color: #404040;
+}
+
+.dayName:hover,
+.monthYear:hover,
+.week:hover {
+    background-color: transparent;
+}
+
+.prev {
+    grid-column: 7;
+}
+
+.next {
+    grid-column: 8;
+}
+
+.selected, .selected:hover {
+    background-color: #1f497b;
+    color: #fff;
+}
+
+.otherMonth {
+    color: #c0c0c0;
+}
+
+.week {
+    color: #c0c0c0;
+    font-size: 80%;
+    padding-right: 12px;
+}

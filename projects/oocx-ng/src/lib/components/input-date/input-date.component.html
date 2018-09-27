@@ -1,0 +1,12 @@
+<input type="text" [(ngModel)]="dateString"
+ (focus)="onInputFocus()"
+ (click)="onInputClick()"
+ (keyup.escape)="showCalendar = false"
+ (keyup.arrowdown)="showCalendar = true"
+ (keyup.shift.arrowleft)="prev()"
+ (keyup.shift.arrowright)="next()"
+ #input>
+<ox-calendar *ngIf="showCalendar"
+ [date]="date"
+ (selectedDateChanged)="selectedDateChanged($event)"
+ #calendar></ox-calendar>

@@ -1,0 +1,20 @@
+<div>
+  <button *ngFor="let text of selectedOptions" (keyup.enter)="editOption($event, text)" (click)="editOption($event, text)">{{text}}</button>
+  <input type="text" [attr.name]="name" [(ngModel)]="text"
+      (keyup)="onKeyUp($event)"
+      (keydown.arrowup)="onUp($event)" (keydown.arrowdown)="onDown($event)"
+      (keyup.enter)="onEnter($event)" (keydown.tab)="onEnter($event)"
+      (keyup.esc)="onEscape()"
+      (keydown.backspace)="onDelete()"
+      (blur)="onBlur($event)"
+      (dblclick)="onDblClick()"
+      autocomplete="false"
+      #input
+      />
+</div>
+<ul *ngIf="autocompleteEntries.length > 0">
+    <li #listItem *ngFor="let e of autocompleteEntries; let i = index" [class.selected]="selectedIndex == i" (click)="selectIndex(i, $event)">
+        <ng-template [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{ $implicit: e }"></ng-template>
+    </li>
+</ul>
+<ng-template #defaultTemplate let-entry>{{entry}}</ng-template>

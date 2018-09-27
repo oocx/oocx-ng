@@ -1,0 +1,33 @@
+:host {
+    display: inline-block;
+}
+
+.button,
+input[type="submit"],
+input[type="button"],
+/deep/ button {
+  background-color: #e0e0e0;
+  border: 1px solid #dddddd;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 4px 10px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  width: auto;
+}
+
+/deep/ button.selected,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+/deep/ button:hover {
+  background-color: #1f497b;
+  color: #ffffff;
+}
+
+
+/deep/ .size-s button, /deep/ .size-xs button {
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
