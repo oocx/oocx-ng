@@ -42,11 +42,9 @@ steps:
     ../../node_modules/.bin/semantic-release
   displayName: 'publish package'
 
-- task: AzureFileCopy@2
+- task: AzureCLI@1
   inputs:
-    sourcePath: 'dist'
-    destination: 'azureBlob'
     azureSubscription: 'startliste-oocx-ng'
-    storage: 'oocxng'
-    containerName: '$web'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az storage blob upload-batch --destination $web --account-name oocxng --source dist/oocx-ng-demo'
   displayName: 'publish demo site to Azure'
