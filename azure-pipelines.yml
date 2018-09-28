@@ -28,6 +28,12 @@ steps:
     testResultsFiles: '**/TESTS-*.xml'
   displayName: 'publish test results'
 
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'cobertura'
+    summaryFileLocation: 'coverage/cobertura-coverage.xml'
+  displayName: 'publish code coverage results'
+
 - script: |
     cp README.md dist/oocx-ng
     cp projects/oocx-ng/oocx-ng.less dist/oocx-ng
