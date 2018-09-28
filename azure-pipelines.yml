@@ -46,5 +46,5 @@ steps:
   inputs:
     azureSubscription: 'startliste-oocx-ng'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az storage blob upload-batch --destination $web --account-name oocxng --source dist/oocx-ng-demo'
+    inlineScript: 'az storage blob upload-batch --destination \$web --account-name oocxng --source dist/oocx-ng-demo'
   displayName: 'publish demo site to Azure'
