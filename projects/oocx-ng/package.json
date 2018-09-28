@@ -1,6 +1,18 @@
 {
   "name": "oocx-ng",
   "version": "0.0.1",
+  "description": "Lightweight components and directives for Angular. Contains a calendar, date picker, autocomplete, number input, label and other controls.",
+  "keywords": [
+    "Angular",
+    "components",
+    "calendar",
+    "autocomplete"
+  ],
+  "license": "MIT",
+  "author": {
+    "email": "mathias@raacke.info",
+    "name": "Mathias Raacke"
+  },
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0",

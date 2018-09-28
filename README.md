@@ -1,4 +1,58 @@
-# OocxNgDemo
+# OocxNg
+
+**Im currently preparing to publish this project as open source (moving the code to github, creating the npm package, adding documentation, cleaning up my code, ...). As long as you see this text here, it means I'm not ready set to officially announce and publish this project, so everything you see so far is work in progress.**
+
+This project contains a collection of lightweight Angular components and directives.
+
+I use these components for one of my own projects. I published them here because I think they may be useful for other projects as well.
+
+## Components included in OocxNg
+
+* Calendar
+* Date picker
+* Autocomplete
+* Autocomplete with multiple selection
+* Selection list
+* Number input
+* Label
+* Checkbox
+* Spinner (loading animation)
+
+## Directives
+
+* Number input
+* Label
+* History-back navigation
+
+## Pipes
+
+* Duration (converts a number to hour:minutes format)
+
+# Using OocxNg in your Angular project
+
+Install the package: `npm install oocx-ng --save` or `yarn install --save`.
+
+Import OocxNgModule in your own module:
+
+```
+import { OocxNgModule } from './../../projects/oocx-ng/src/lib/oocx-ng.module';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    OocxNgModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+
+# Building the project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
