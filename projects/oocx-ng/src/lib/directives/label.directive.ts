@@ -4,18 +4,18 @@ import { LabelComponent } from '../components/label/label.component';
 import { LabelIdGeneratorService } from '../services/label-id-generator.service';
 
 @Directive({
-  selector: '[acLabel]'
+  selector: '[oxLabel]'
 })
 export class LabelDirective {
 
   @Input()
-  set acLabel(label: string) {
+  set oxLabel(label: string) {
     this._label = label;
     this.updateView();
   }
 
   @Input()
-  set acLabelClass(c: string) {
+  set oxLabelClass(c: string) {
     this._class = c;
     this.updateView();
   }

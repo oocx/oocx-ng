@@ -1,7 +1,9 @@
-import { Component, OnInit, ElementRef, ViewChild, HostListener, EventEmitter, Output } from '@angular/core';
-import { format, parse } from 'date-fns/esm';
+import { Component, ElementRef, ViewChild, HostListener, EventEmitter, Output } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { format, parse } from 'date-fns/esm';
+
 import { CalendarComponent } from '../calendar/calendar.component';
+import { AutocompleteDateService } from '../../services/autocomplete-date.service';
 
 @Component({
   selector: 'ox-input-date',
@@ -11,7 +13,7 @@ import { CalendarComponent } from '../calendar/calendar.component';
     { provide: NG_VALUE_ACCESSOR, useExisting: InputDateComponent, multi: true }
   ]
 })
-export class InputDateComponent implements OnInit, ControlValueAccessor {
+export class InputDateComponent implements ControlValueAccessor {
 
   @ViewChild('input')
   public input: ElementRef<HTMLInputElement>;
@@ -26,7 +28,7 @@ export class InputDateComponent implements OnInit, ControlValueAccessor {
 
   private rawDateString = '';
 
-  private _date = new Date();
+  private _date: Date = null;
 
   public writeValue(value: any): void {
     if (value) {
@@ -97,10 +99,7 @@ export class InputDateComponent implements OnInit, ControlValueAccessor {
     this.showCalendar = true;
   }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  constructor(private autocompleteDate: AutocompleteDateService) { }
 
   public selectedDateChanged(date: Date) {
     this.date = date;
@@ -133,29 +132,8 @@ export class InputDateComponent implements OnInit, ControlValueAccessor {
     } catch { }
   }
 
-  private completeDate(datum: string) {
-    if (!datum) { return ''; }
-    if (datum.endsWith('.')) {
-      datum = datum + new Date().getFullYear();
-      if (datum[1] === '.') { datum = '0' + datum; }
-      if (datum[4] === '.') { datum = datum.substring(0, 3) + '0' + datum.substring(3); }
-      return;
-    }
-    const parts = datum.split('.');
-
-    if (parts.length === 2 || parts.length === 3) {
-      if (parts[0].length === 1) { parts[0] = '0' + parts[0]; }
-      if (parts[1].length === 1) { parts[1] = '0' + parts[1]; }
-      if (parts.length === 2) {
-        datum = parts[0] + '.' + parts[1] + '.' + new Date().getFullYear();
-      } else if (parts[2].length === 2 ) {
-        datum = parts[0] + '.' + parts[1] + '.20' + parts[2];
-      } else if (parts[2].length === 4 ) {
-        datum = parts[0] + '.' + parts[1] + '.' + parts[2];
-      }
-    }
-
-    return datum;
+  private completeDate(date: string) {
+    return this.autocompleteDate.completeDate(date, this._date);
   }
 
 }

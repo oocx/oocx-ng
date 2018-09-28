@@ -17,3 +17,4 @@ export { CheckboxComponent } from './lib/components/checkbox/checkbox.component'
 export { DurationPipe } from './lib/pipes/duration.pipe';
 export { CalendarComponent } from './lib/components/calendar/calendar.component';
 export { InputDateComponent } from './lib/components/input-date/input-date.component';
+export { InputDateDirective } from './lib/directives/input-date.directive';

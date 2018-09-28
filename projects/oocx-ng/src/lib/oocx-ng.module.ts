@@ -15,20 +15,22 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { DurationPipe } from './pipes/duration.pipe';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { InputDateComponent } from './components/input-date/input-date.component';
+import { InputDateDirective } from './directives/input-date.directive';
 
 const publicComponents = [
   AutocompleteComponent,
-  InputNumberDirective,
-  InputNumberComponent,
-  SelectionListComponent,
   AutocompleteMultiselectComponent,
-  HistoryBackDirective,
-  SpinnerComponent,
   CalendarComponent,
-  InputDateComponent,
-  LabelDirective,
-  LabelComponent,
   CheckboxComponent,
+  InputDateComponent,
+  InputNumberComponent,
+  LabelComponent,
+  SelectionListComponent,
+  SpinnerComponent,
+  HistoryBackDirective,
+  InputDateDirective,
+  InputNumberDirective,
+  LabelDirective,
   DurationPipe
 ];
 
