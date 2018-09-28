@@ -18,3 +18,8 @@ steps:
     ng build --prod
     ng build oocx-ng
   displayName: 'npm install and build'
+
+- script: |
+    cd dist/oocx-ng
+    ..\..\node_modules\.bin\semantic-release
+  displayName: 'publish package'
