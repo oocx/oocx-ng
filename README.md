@@ -4,8 +4,6 @@
 ![npm license](https://img.shields.io/npm/l/oocx-ng.svg)
 ![build status](https://dev.azure.com/oocx/oocx-ng/_apis/build/status/1?api-version=5.0-preview.1)
 
-**Im currently preparing to publish this project as open source (moving the code to github, creating the npm package, adding documentation, cleaning up my code, ...). As long as you see this text here, it means I'm not ready to officially announce and publish this project, so everything you see so far is work in progress.**
-
 This project contains a collection of lightweight Angular components and directives.
 
 I use these components for one of my own projects. I published them here because I think they may be useful for other projects as well.
@@ -68,25 +66,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server that hosts the demo application. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name --project oocx-ng` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build oocx-ng` to build the library project. The build artifacts will be stored in the `dist/oocx-ng` directory.
+
+Run `ng build` to build the demo project. The build artifacts will be stored in the `dist/oocx-ng-demo` directory.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `ng test oocx-ng` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
