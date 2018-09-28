@@ -43,9 +43,9 @@ steps:
 
 - task: AzureFileCopy@2
   inputs:
-    sourcePath: dist
-    destination: azureBlob
-    azureSubscription: startliste-oocx-ng
-    storage: oocxng
-    containerName: $web
+    sourcePath: 'dist'
+    destination: 'azureBlob'
+    azureSubscription: 'startliste-oocx-ng'
+    storage: 'oocxng'
+    containerName: '$web'
   displayName: 'publish demo site to Azure'
