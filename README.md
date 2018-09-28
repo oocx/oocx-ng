@@ -1,10 +1,12 @@
 # OocxNg
 
-**Im currently preparing to publish this project as open source (moving the code to github, creating the npm package, adding documentation, cleaning up my code, ...). As long as you see this text here, it means I'm not ready set to officially announce and publish this project, so everything you see so far is work in progress.**
+**Im currently preparing to publish this project as open source (moving the code to github, creating the npm package, adding documentation, cleaning up my code, ...). As long as you see this text here, it means I'm not ready to officially announce and publish this project, so everything you see so far is work in progress.**
 
 This project contains a collection of lightweight Angular components and directives.
 
 I use these components for one of my own projects. I published them here because I think they may be useful for other projects as well.
+
+The components in this library require a modern, evergreen browser (Chrome, Firefox, Edge, Safari, ...). Older browsers like Internet Explorer 11 are NOT supported.
 
 ## Components included in OocxNg
 
