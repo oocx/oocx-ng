@@ -24,6 +24,8 @@ steps:
   displayName: 'run unit tests'
 
 - task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '**/TESTS-*.xml'
   displayName: 'publish test results'
 
 - script: |
@@ -32,3 +34,4 @@ steps:
     cd dist/oocx-ng
     ../../node_modules/.bin/semantic-release
   displayName: 'publish package'
+
