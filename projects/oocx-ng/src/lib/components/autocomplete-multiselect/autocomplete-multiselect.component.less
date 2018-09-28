@@ -19,7 +19,11 @@ div {
 }
 
 button {
-    .button;
+    .small-button;
+}
+
+button:hover {
+  .selection;
 }
 
 input {
@@ -51,7 +55,7 @@ li {
     cursor: pointer;
 }
 
-li /deep/ * {
+:host li /deep/ * {
     cursor: pointer !important;
 }
 

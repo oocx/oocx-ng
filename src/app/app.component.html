@@ -77,5 +77,6 @@
   if the observable throws an error.
 </div>
 <div>
-  <ox-spinner></ox-spinner>
+  <button (click)="emitError()">Emit error</button>
+  <ox-spinner [errorSource]="errorSource"></ox-spinner>
 </div>

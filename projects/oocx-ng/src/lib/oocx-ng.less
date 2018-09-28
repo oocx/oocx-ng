@@ -38,9 +38,22 @@
 }
 
 .button {
-    white-space: nowrap;
-    font-size: 0.8em;
+    background-color: @secondary-background-color;
+    border: @input-border;
+    border-color: @light-border-color;
+    color: @font-color;
+    cursor: pointer;
+    font-size: 1.1em;
     font-family: @font-family;
+    padding: 4px 10px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+    width: auto;
+}
+
+.small-button {
+    .button;
+    font-size: 0.8em;
     padding: 1px 4px;
     margin: 0 0 0 4px;
 }

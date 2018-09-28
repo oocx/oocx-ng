@@ -4,32 +4,19 @@
     display: inline-block;
 }
 
-.button,
-input[type="submit"],
-input[type="button"],
-/deep/ button {
-  background-color: @secondary-background-color;
-  border: @input-border;
-  border-color: @light-border-color;
-  color: @font-color;
-  cursor: pointer;
-  font-size: 1.1em;
-  font-family: @font-family;
-  padding: 4px 10px;
-  margin-right: 8px;
-  margin-bottom: 2px;
-  width: auto;
+button,
+:host /deep/ button {
+  .button;
 }
 
-/deep/ button.selected,
-input[type="submit"]:hover,
-input[type="button"]:hover,
-/deep/ button:hover {
+:host /deep/ button.selected,
+:host /deep/ button:hover {
   .selection;
 }
 
 
-/deep/ .size-s button, /deep/ .size-xs button {
+:host /deep/ .size-s button,
+:host /deep/ .size-xs button {
   margin-right: 4px;
   margin-bottom: 4px;
 }
