@@ -19,9 +19,6 @@ export class CalendarComponent implements OnInit {
     this.update();
   }
 
-  @Output()
-  public selectedDateChanged = new EventEmitter<Date>();
-
   public get date() {
     if (this._date) {
       return this._date;
@@ -29,6 +26,9 @@ export class CalendarComponent implements OnInit {
       return new Date();
     }
   }
+
+  @Output()
+  public selectedDateChanged = new EventEmitter<Date>();
 
   public get month() {
     return this.date.getMonth() + 1;

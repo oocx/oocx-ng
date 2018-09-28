@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-
-  title = 'oocx-ng-demo';
-
   public options = [ 'eins', 'zwei', 'drei' ];
 
   public autocompleteHandler(query: string) {

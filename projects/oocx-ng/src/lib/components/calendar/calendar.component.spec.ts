@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CalendarComponent } from './calendar.component';
 
-fdescribe('CalendarComponent', () => {
+describe('CalendarComponent', () => {
   let component: CalendarComponent;
   let fixture: ComponentFixture<CalendarComponent>;
   let element: HTMLElement;
@@ -17,7 +17,7 @@ fdescribe('CalendarComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(CalendarComponent);
     component = fixture.componentInstance;
-    element = fixture.nativeElement;    
+    element = fixture.nativeElement;
   });
 
   it('should create', () => {
