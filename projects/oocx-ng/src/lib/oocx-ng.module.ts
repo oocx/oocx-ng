@@ -16,6 +16,7 @@ import { DurationPipe } from './pipes/duration.pipe';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { InputDateComponent } from './components/input-date/input-date.component';
 import { InputDateDirective } from './directives/input-date.directive';
+import { AutocompleteDateService } from './services/autocomplete-date.service';
 
 const publicComponents = [
   AutocompleteComponent,
@@ -41,7 +42,10 @@ const publicComponents = [
   ],
   declarations: publicComponents,
   exports: publicComponents,
-  entryComponents: [LabelComponent]
+  entryComponents: [LabelComponent],
+  providers: [
+    AutocompleteDateService
+  ]
 })
 export class OocxNgModule { }
 

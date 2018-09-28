@@ -80,7 +80,7 @@ export class InputDateComponent implements ControlValueAccessor {
   }
 
   @HostListener('focusout')
-  public onFocusOut(e) {
+  public onFocusOut() {
     setTimeout(() => {
       // wichtig: über setTimeout, damit weitere Events wie z.B. Klick auf Kalender
       // ausgewertet werden

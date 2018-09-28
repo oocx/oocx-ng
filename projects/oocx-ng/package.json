@@ -13,6 +13,10 @@
     "email": "mathias@raacke.info",
     "name": "Mathias Raacke"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oocx/oocx-ng.git"
+  },
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0",

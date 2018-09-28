@@ -158,7 +158,7 @@ export class AutocompleteComponent implements AfterContentInit {
       }, 100);
     }
 
-    private selectIndex(idx: number, e: Event = null) {
+    public selectIndex(idx: number, e: Event = null) {
       this.selectedIndex = idx;
       if (idx >= 0 && idx < this.listItems.length) {
         const listItem = this.listItems.find((item, index) => index === idx);
