@@ -20,7 +20,7 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
-    ng test oocx-ng --watch=false --code-coverage
+    ng test oocx-ng --watch=false --code-coverage --browsers=ChromeHeadless
   displayName: 'run unit tests'
 
 - task: PublishTestResults@2
