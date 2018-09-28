@@ -20,6 +20,8 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
+    cp README.md dist/oocx-ng
+    cp projects/oocx-ng/oocx-ng.less dist/oocx-ng
     cd dist/oocx-ng
     ../../node_modules/.bin/semantic-release
   displayName: 'publish package'
