@@ -12,6 +12,10 @@ I use these components for one of my own projects. I published them here because
 
 The components in this library require a modern, evergreen browser (Chrome, Firefox, Edge, Safari, ...). Older browsers like Internet Explorer 11 are NOT supported.
 
+## Demo
+
+The [demo application](https://oocxng.z6.web.core.windows.net/index.html) shows most of the components.
+
 ## Components included in OocxNg
 
 * Calendar
