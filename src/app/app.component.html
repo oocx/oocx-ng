@@ -1,44 +1,81 @@
-<h1>Calendar</h1>
+<h1>Components</h1>
+<div>oocx-ng contains a collection of lightweight Angular components:</div>
+
+<h2>Calendar</h2>
+<div class="description">
+  The calendar component shows a calendar with German day / month names and week numbers.
+  The user can select a date and can navigate to the previous / next month.
+</div>
 <div>
   <ox-calendar></ox-calendar>
 </div>
 
-<h1>Date Input</h1>
+<h2>Date Input</h2>
+<div class="description">
+  The date input combines a date autocomplete service with the calendar component. The user can imput the date
+  or select a date in the calendar component.
+</div>
 <div>
   <ox-input-date></ox-input-date>
 </div>
 
-<h1>Number Input</h1>
+<h2>Number Input</h2>
+<div class="description">
+  A textbox that limits input to numbers.
+</div>
 <div>
   <ox-input-number></ox-input-number>
 </div>
 
-<h1>Autocomplete</h1>
+<h2>Autocomplete</h2>
+<div class="description">
+  A text input with autocomplete popup. The autocomplete entries can be simple text (default) or complex
+  content (by specifiing a custom template).
+</div>
 <div>
   <ox-autocomplete [completionHandler]="autocompleteHandler"></ox-autocomplete>
 </div>
 
-<h1>Autocomplete Multiselect</h1>
+<h2>Autocomplete Multiselect</h2>
+<div class="description">
+  This control works similar to the autocomplete component, but allows the selection of multiple values
+  from the autocomplete popup.
+</div>
 <div>
   <ox-autocomplete-multiselect [completionHandler]="autocompleteHandler"></ox-autocomplete-multiselect>
 </div>
 
-<h1>Selection-List</h1>
+<h2>Selection-List</h2>
+<div class="description">
+  Offers a list of choices which are presented as buttons.
+</div>
 <div>
   <ox-selection-list [options]="options"></ox-selection-list>
 </div>
 
-<h1>Checkbox</h1>
+<h2>Checkbox</h2>
+<div class="description">
+  The checkbox component combines an input of type 'checkbox' with a label component. The checkbox can be checked / unchecked
+  by clicking on the label. IDs for the input and the label for-attribute are generated automatically.
+</div>
 <div>
   <ox-checkbox>Checkbox</ox-checkbox>
 </div>
 
-<h1>Label</h1>
+<h2>Label</h2>
+<div class="description">
+  The label component can be used to generate a HTML label element for an input element. The component automatically
+  generates a unique ID for the input element and uses this ID for the for-attribute of the label.
+</div>
 <div>
   <ox-label [label]="'Text'"><input type="text"/></ox-label>
 </div>
 
-<h1>Spinner</h1>
+<h2>Spinner</h2>
+<div class="description">
+  The spinner component can be used as loading animation. It can subscribe to an observable and can display an error message
+  if the observable throws an error.
+</div>
 <div>
   <ox-spinner></ox-spinner>
 </div>

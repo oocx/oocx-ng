@@ -1,7 +1,7 @@
 :host {
     display: block;
     font-family: 'Segoe UI', 'San Francisco', 'Roboto', sans-serif;
-    padding: 64px;
+    padding: 64px 128px;
 }
 
 ox-input-date, ox-input-number {
