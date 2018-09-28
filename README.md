@@ -1,4 +1,4 @@
-# OocxNg
+# OocxNg - Lightweight Angular components
 
 **Im currently preparing to publish this project as open source (moving the code to github, creating the npm package, adding documentation, cleaning up my code, ...). As long as you see this text here, it means I'm not ready to officially announce and publish this project, so everything you see so far is work in progress.**
 
