@@ -1,5 +1,9 @@
 # OocxNg - Lightweight Angular components
 
+![npm version](https://img.shields.io/npm/v/oocx-ng.svg)
+![npm license](https://img.shields.io/npm/l/oocx-ng.svg)
+![build status](https://dev.azure.com/oocx/oocx-ng/_apis/build/status/1?api-version=5.0-preview.1)
+
 **Im currently preparing to publish this project as open source (moving the code to github, creating the npm package, adding documentation, cleaning up my code, ...). As long as you see this text here, it means I'm not ready to officially announce and publish this project, so everything you see so far is work in progress.**
 
 This project contains a collection of lightweight Angular components and directives.
