@@ -14,6 +14,6 @@ export { SpinnerComponent } from './lib/components/spinner/spinner.component';
 export { LabelDirective } from './lib/directives/label.directive';
 export { LabelComponent } from './lib/components/label/label.component';
 export { CheckboxComponent } from './lib/components/checkbox/checkbox.component';
-export { DauerPipe } from './lib/pipes/dauer.pipe';
+export { DurationPipe } from './lib/pipes/duration.pipe';
 export { CalendarComponent } from './lib/components/calendar/calendar.component';
 export { InputDateComponent } from './lib/components/input-date/input-date.component';

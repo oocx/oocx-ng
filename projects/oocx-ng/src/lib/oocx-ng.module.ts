@@ -12,7 +12,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { LabelDirective } from './directives/label.directive';
 import { LabelComponent } from './components/label/label.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
-import { DauerPipe } from './pipes/dauer.pipe';
+import { DurationPipe } from './pipes/duration.pipe';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { InputDateComponent } from './components/input-date/input-date.component';
 
@@ -29,7 +29,7 @@ const publicComponents = [
   LabelDirective,
   LabelComponent,
   CheckboxComponent,
-  DauerPipe
+  DurationPipe
 ];
 
 @NgModule({

@@ -1,9 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'dauer'
+  name: 'duration'
 })
-export class DauerPipe implements PipeTransform {
+export class DurationPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
     if (typeof value !== 'number') { return value; }
