@@ -20,6 +20,13 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
+    ng test oocx-ng --watch=false --code-coverage
+  displayName: 'run unit tests'
+
+- task: PublishTestResults@2
+  inputs:
+
+- script: |
     cp README.md dist/oocx-ng
     cp projects/oocx-ng/oocx-ng.less dist/oocx-ng
     cd dist/oocx-ng
