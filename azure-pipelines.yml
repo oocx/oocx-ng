@@ -24,7 +24,7 @@ steps:
   displayName: 'run unit tests'
 
 - task: PublishTestResults@2
-  inputs:
+  displayName: 'publish test results'
 
 - script: |
     cp README.md dist/oocx-ng
