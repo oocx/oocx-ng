@@ -1,6 +1,6 @@
 :host {
     display: block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', 'San Francisco', 'Roboto', sans-serif;
     padding: 64px;
 }
 
@@ -8,6 +8,36 @@ ox-input-date, ox-input-number {
     width: 100px;
 }
 
-ox-autocomplete {
+ox-autocomplete, ox-autocomplete-multiselect {
     width: 200px;
+}
+
+ox-label > input {
+    margin-left: 8px;
+}
+
+h1, h2, h3{
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: normal;
+    clear: both;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0 0 16px 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0 0 12px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+div {
+    margin: 0 0 32px 0;
 }

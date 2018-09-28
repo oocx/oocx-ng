@@ -1,10 +1,12 @@
+@import '../../oocx-ng.less';
+
 :host {
     white-space: nowrap;
 }
 
 input {
     appearance: none;
-    border: 2px solid #505060;
+    border: 2px solid @border-color;
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -18,14 +20,13 @@ input:checked:after {
     height: 4px;
     border-width: 0 0 2px 2px;
     border-style: solid;
-    border-color: #1f497b;
-    ;
+    border-color: @accent-color;
     transform: translate(1px, 2px) rotate(-45deg);
     position: absolute;
 }
 
 input:focus {
-    background: #e0e0ff;
+    background: @secondary-background-color;
 }
 
 label {

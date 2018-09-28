@@ -11,11 +11,8 @@
 }
 
 input {
-    box-sizing: border-box;
-    margin: 0;
-    border: @input-border;
+    .input;
     flex: 1 0;
-    padding: 4px;
     width: 100%;
     max-width: 100%;
 }
@@ -25,19 +22,19 @@ ul {
     top: 16px;
     left: 0;
     padding: 0;
-    border: 1px solid #a0a0a0;
+    border: @input-border;
     list-style: none;
     min-width: 100%;
     box-sizing: border-box;
     max-height: 500px;
     overflow-y: scroll;
     overflow-x: hidden;
-    background: #fff;
+    background: @background-color;
     z-index: 100;
 }
 
 li {
-    padding: 4px;
+    padding: @base-padding;
     width: 100%;
     white-space: nowrap;
     cursor: pointer;
@@ -49,11 +46,9 @@ li /deep/ * {
 }
 
 li:hover {
-    background: #f0f0ff;
-    color: #000;
+    .selection-hover;
 }
 
 .selected {
-    background: #505090;
-    color: #fff;
+    .selection;
 }

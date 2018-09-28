@@ -14,7 +14,7 @@ div {
 }
 
 div:hover {
-    background-color: #e0e0e0;
+    background-color: @secondary-background-color;
 }
 
 .monthYear, .prev, .next {
@@ -29,7 +29,7 @@ div:hover {
 .week,
 .dayName {
     cursor: default;
-    color: #404040;
+    color: @font-color-weak
 }
 
 .dayName:hover,
@@ -47,16 +47,15 @@ div:hover {
 }
 
 .selected, .selected:hover {
-    background-color: #1f497b;
-    color: #fff;
+    .selection;
 }
 
 .otherMonth {
-    color: #c0c0c0;
+    color: @font-color-weaker;
 }
 
 .week {
-    color: #c0c0c0;
+    color: @font-color-weaker;
     font-size: 80%;
     padding-right: 12px;
 }

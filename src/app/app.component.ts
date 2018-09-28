@@ -10,6 +10,8 @@ export class AppComponent {
 
   title = 'oocx-ng-demo';
 
+  public options = [ 'eins', 'zwei', 'drei' ];
+
   public autocompleteHandler(query: string) {
     const autocompleteEntries = [
       'Germany', 'United Kingdom', 'United States', 'France', 'Canada', 'Italy', 'Sweden', 'Norway'

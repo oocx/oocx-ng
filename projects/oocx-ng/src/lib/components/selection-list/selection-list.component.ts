@@ -3,7 +3,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'ox-selection-list',
   templateUrl: './selection-list.component.html',
-  styleUrls: ['./selection-list.component.css']
+  styleUrls: ['./selection-list.component.less']
 })
 export class SelectionListComponent {
 

@@ -7,7 +7,7 @@ import { DomHelperService } from '../../services/dom-helper.service';
 @Component({
   selector: 'ox-autocomplete-multiselect',
   templateUrl: './autocomplete-multiselect.component.html',
-  styleUrls: ['./autocomplete-multiselect.component.css']
+  styleUrls: ['./autocomplete-multiselect.component.less']
 })
 export class AutocompleteMultiselectComponent implements AfterContentInit {
 

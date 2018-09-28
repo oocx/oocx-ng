@@ -1,3 +1,46 @@
-@font-family: Segoe UI;
+@accent-color: #1f497b;
+@background-color: #fff;
+@secondary-background-color: #e0e0e0;
+@font-color: #000;
+@font-color-weak: #404040;
+@font-color-weaker: #c0c0c0;
+@border-color: #7A7A7A;
+@light-border-color: #ddd;
+@error-color: #7b491f;
+@error-color-light: #aa592f;
 
-@input-border: 1px solid #7A7A7A;
+@selection-background-color: @accent-color;
+@selection-foreground-color: @background-color;
+
+@font-family: 'Segoe UI', 'San Francisco', 'Roboto', sans-serif;
+
+@base-padding: 4px;
+
+@input-border: 1px solid @border-color;
+
+@shadow: 2px 2px 6px #cccccc;
+
+.input {
+    border: @input-border;
+    box-sizing: border-box;
+    margin: 0;
+    padding: @base-padding;
+}
+
+.selection {
+    background: @selection-background-color;
+    color: @selection-foreground-color;
+}
+
+.selection-hover {
+    background: @secondary-background-color;
+    color: @font-color;
+}
+
+.button {
+    white-space: nowrap;
+    font-size: 0.8em;
+    font-family: @font-family;
+    padding: 1px 4px;
+    margin: 0 0 0 4px;
+}
