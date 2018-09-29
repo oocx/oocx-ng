@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build oocx-ng && copy projects\\oocx-ng\\src\\lib\\oocx-ng.less dist\\oocx-ng",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
