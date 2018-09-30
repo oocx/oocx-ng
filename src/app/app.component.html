@@ -1,7 +1,14 @@
-<h1>Components</h1>
+<h1>OutOfCoffeeException Angular Components</h1>
+<div class="description">
+  This page demonstrates the oocx-ng Angular components.
+  For more information and source code, visit the <a href="https://github.com/oocx/oocx-ng">oocx-ng homepage on github</a>.
+  You can <a href="https://npmjs.com/package/oocx-ng">download</a> these components from npmjs.
+</div>
+
+<h2>Components</h2>
 <div>oocx-ng contains a collection of lightweight Angular components:</div>
 
-<h2>Calendar</h2>
+<h3>Calendar</h3>
 <div class="description">
   The calendar component shows a calendar with German day / month names and week numbers.
   The user can select a date and can navigate to the previous / next month.
@@ -10,7 +17,7 @@
   <ox-calendar></ox-calendar>
 </div>
 
-<h2>Date Input</h2>
+<h3>Date Input</h3>
 <div class="description">
   The date input combines a date autocomplete service with the calendar component. The user can imput the date
   or select a date in the calendar component.
@@ -19,7 +26,7 @@
   <ox-input-date></ox-input-date>
 </div>
 
-<h2>Number Input</h2>
+<h3>Number Input</h3>
 <div class="description">
   A textbox that limits input to numbers.
 </div>
@@ -27,7 +34,7 @@
   <ox-input-number></ox-input-number>
 </div>
 
-<h2>Autocomplete</h2>
+<h3>Autocomplete</h3>
 <div class="description">
   A text input with autocomplete popup. The autocomplete entries can be simple text (default) or complex
   content (by specifiing a custom template).
@@ -36,7 +43,7 @@
   <ox-autocomplete [completionHandler]="autocompleteHandler"></ox-autocomplete>
 </div>
 
-<h2>Autocomplete Multiselect</h2>
+<h3>Autocomplete Multiselect</h3>
 <div class="description">
   This control works similar to the autocomplete component, but allows the selection of multiple values
   from the autocomplete popup.
@@ -45,7 +52,7 @@
   <ox-autocomplete-multiselect [completionHandler]="autocompleteHandler"></ox-autocomplete-multiselect>
 </div>
 
-<h2>Selection-List</h2>
+<h3>Selection-List</h3>
 <div class="description">
   Offers a list of choices which are presented as buttons.
 </div>
@@ -53,7 +60,7 @@
   <ox-selection-list [options]="options"></ox-selection-list>
 </div>
 
-<h2>Checkbox</h2>
+<h3>Checkbox</h3>
 <div class="description">
   The checkbox component combines an input of type 'checkbox' with a label component. The checkbox can be checked / unchecked
   by clicking on the label. IDs for the input and the label for-attribute are generated automatically.
@@ -62,7 +69,7 @@
   <ox-checkbox>Checkbox</ox-checkbox>
 </div>
 
-<h2>Label</h2>
+<h3>Label</h3>
 <div class="description">
   The label component can be used to generate a HTML label element for an input element. The component automatically
   generates a unique ID for the input element and uses this ID for the for-attribute of the label.
@@ -71,7 +78,7 @@
   <ox-label [label]="'Text'"><input type="text"/></ox-label>
 </div>
 
-<h2>Spinner</h2>
+<h3>Spinner</h3>
 <div class="description">
   The spinner component can be used as loading animation. It can subscribe to an observable and can display an error message
   if the observable throws an error.
@@ -80,3 +87,15 @@
   <button (click)="emitError()">Emit error</button>
   <ox-spinner [errorSource]="errorSource"></ox-spinner>
 </div>
+
+<h2>Pipes</h2>
+
+<h3>duration pipe</h3>
+<div class="description">Converts hours to hour:minutes format</div>
+<table>
+  <tr><th>pipe input</th><th>result</th></tr>
+  <tr><td>0</td><td>{{ 0 | duration }}</td></tr>
+  <tr><td>0.5</td><td>{{ 0.5 | duration }}</td></tr>
+  <tr><td>1</td><td>{{ 1 | duration }}</td></tr>
+  <tr><td>25.25</td><td>{{ 25.25 | duration }}</td></tr>
+</table>
