@@ -200,6 +200,7 @@ export class AutocompleteMultiselectComponent implements AfterContentInit {
         this.addOption(this.valueSelector(this.autocompleteEntries[this.selectedIndex]));
         this.autocompleteEntries = [];
         this.input.nativeElement.focus();
+        this.text = null;
       }
     }
 
