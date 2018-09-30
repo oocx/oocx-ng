@@ -12,7 +12,7 @@ The components in this library require a modern, evergreen browser (Chrome, Fire
 
 ## Demo
 
-The [demo application](https://oocxng.z6.web.core.windows.net/index.html) shows most of the components.
+The [demo application](https://ng.outofcoffeeexception.de) shows most of the components.
 
 ## Components included in OocxNg
 
