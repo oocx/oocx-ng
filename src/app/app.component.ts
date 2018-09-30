@@ -14,10 +14,27 @@ export class AppComponent {
 
   public autocompleteHandler(query: string) {
     const autocompleteEntries = [
-      'Germany', 'United Kingdom', 'United States', 'France', 'Canada', 'Italy', 'Sweden', 'Norway'
+      'Austria', 'Italy',
+      'Belgium', 'Latvia',
+      'Bulgaria', 'Lithuania',
+      'Croatia', 'Luxembourg',
+      'Cyprus', 'Malta',
+      'Czech Republic', 'Netherlands',
+      'Denmark', 'Poland',
+      'Estonia', 'Portugal',
+      'Finland', 'Romania',
+      'France', 'Slovakia',
+      'Germany', 'Slovenia',
+      'Greece', 'Spain',
+      'Hungary', 'Sweden',
+      'Ireland', 'United Kingdom'
     ];
 
-    return autocompleteEntries.filter(e => e.startsWith(query));
+    if (!query) {
+      return autocompleteEntries;
+    }
+
+    return autocompleteEntries.filter(e => e.toLocaleLowerCase().startsWith(query.toLocaleLowerCase()));
   }
 
   public emitError() {
