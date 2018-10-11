@@ -6,6 +6,7 @@
 </div>
 
 <h2>Components</h2>
+<section>
 <div>oocx-ng contains a collection of lightweight Angular components:</div>
 
 <h3>Calendar</h3>
@@ -87,7 +88,9 @@
   <button (click)="emitError()">Emit error</button>
   <ox-spinner [errorSource]="errorSource"></ox-spinner>
 </div>
+</section>
 
+<section>
 <h2>Pipes</h2>
 
 <h3>duration pipe</h3>
@@ -99,3 +102,29 @@
   <tr><td>1</td><td>{{ 1 | duration }}</td></tr>
   <tr><td>25.25</td><td>{{ 25.25 | duration }}</td></tr>
 </table>
+</section>
+
+<section>
+<h2>Styles</h2>
+
+<h3>Colors</h3>
+<ul class="colors">
+  <li style="color: #fff">accent-color</li>
+  <li>background-color</li>
+  <li>secondary-background-color</li>
+  <li>teritary-background-color</li>
+  <li style="color: #fff">font-color</li>
+  <li style="color: #fff">font-color-weak</li>
+  <li>font-color-weaker</li>
+  <li style="color: #fff">border-color</li>
+  <li>light-border-color</li>
+  <li style="color: #fff">error-color</li>
+  <li style="color: #fff">error-color-light</li>
+  <li>invalid-color</li>
+</ul>
+
+<h3>Buttons</h3>
+<button class="ox-button">ox-button</button>
+<button class="ox-button-s">ox-button-s</button>
+<button class="ox-button-xs">ox-button-xs</button>
+</section>

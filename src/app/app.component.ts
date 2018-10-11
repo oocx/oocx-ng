@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -6,11 +6,19 @@ import { Subject } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   public options = [ 'eins', 'zwei', 'drei' ];
 
   public errorSource = new Subject();
+
+
+  public ngOnInit() {
+    const colorItems = document.querySelectorAll('.colors > li');
+    colorItems.forEach((li: HTMLElement) => {
+      li.style.backgroundColor = 'var(--' + li.innerText + ')';
+    });
+  }
 
   public autocompleteHandler(query: string) {
     const autocompleteEntries = [

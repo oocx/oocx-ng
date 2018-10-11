@@ -1,9 +1,34 @@
 @import '../../projects/oocx-ng/src/lib/oocx-ng.less';
+@import '../../projects/oocx-ng/src/lib/buttons.less';
 
 :host {
     display: block;
     font-family: @font-family;
     padding: 64px 128px;
+}
+
+.colors {
+    --accent-color: @accent-color;
+    --background-color: @background-color;
+    --secondary-background-color: @secondary-background-color;
+    --teritary-background-color: @teritary-background-color;
+    --font-color: @font-color;
+    --font-color-weak: @font-color-weak;
+    --font-color-weaker: @font-color-weaker;
+    --border-color: @border-color;
+    --light-border-color: @light-border-color;
+    --error-color: @error-color;
+    --error-color-light: @error-color-light;
+    --invalid-color: @invalid-color;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.colors > li {
+    margin: 0 0 16px 0;
+    padding: 8px;
+    border: 1px solid @border-color;
 }
 
 ox-input-date, ox-input-number {
@@ -38,6 +63,11 @@ h2 {
 
 h3 {
     font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+section {
+    margin-bottom: 32px;
 }
 
 div {
@@ -45,7 +75,7 @@ div {
 }
 
 button {
-    .button;
+    .ox-button;
 }
 
 button:hover {
