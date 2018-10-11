@@ -158,5 +158,10 @@
       }
     }
   },
-  "defaultProject": "oocx-ng-demo"
+  "defaultProject": "oocx-ng-demo",
+  "cli": {
+    "warnings": {
+      "typescriptMismatch": false
+    }
+  }
 }
