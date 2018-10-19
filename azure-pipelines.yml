@@ -17,6 +17,7 @@ steps:
     npm ci
     ng build --prod
     ng build oocx-ng
+    copy "projects/oocx-ng/src/lib/*.less" "dist/oocx-ng"
   displayName: 'npm install and build'
 
 - script: |
