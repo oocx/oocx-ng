@@ -1,0 +1,78 @@
+@import (reference) 'colors.less';
+
+
+table.ox-table {
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 0.75em;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+
+
+    table, thead, tbody, th, td, tr {
+        overflow: hidden;
+    }
+
+    th {
+        font-size: 1.2em;
+        text-align: left;
+        border: none 0px;
+        padding: 8px 4px;
+        background-color: @table-background-color;
+    }
+
+    td {
+        padding: 8px 4px;
+        border: 0 none;
+    }
+
+    td.actions {
+        text-align: left;
+        padding: 0 0 0 4px;
+        border-top: 1px solid @table-background-color;
+        background: @table-background-color;
+    }
+
+    td.actions a {
+        padding: 4px 8px;
+        margin: 0 0 0 4px;
+    }
+
+    .colsizes, .colsizes td, .colsizes th {
+        visibility: hidden;
+        height: 0;
+        max-height: 0;
+        overflow: hidden;
+        font-size: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    tr:nth-child(2n + 1) {
+        background-color: @table-alternating-background-color;
+    }
+
+    tr.groupHeader {
+        background-color: @table-background-color !important;
+    }
+
+    tr.groupHeader h3 {
+        margin: 0;
+    }
+
+    tr.groupFooter > th {
+        padding: 4px 4px 32px 4px;
+        vertical-align: top;
+    }
+
+    tr.data-row,
+    tr.start-row {
+        border-top: 1px solid @border-color;
+    }
+
+    th {
+        text-align: left;
+    }
+}
