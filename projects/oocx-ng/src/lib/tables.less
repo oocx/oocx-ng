@@ -50,12 +50,21 @@ table.ox-table {
         margin: 0;
     }
 
+    tr {
+        border-top: 1px solid @border-color;
+    }
+
+    tr.header-row {
+        border: none;
+    }
+
     tr:nth-child(2n + 1) {
         background-color: @table-alternating-background-color;
     }
 
     tr.groupHeader {
         background-color: @table-background-color !important;
+        border: none;
     }
 
     tr.groupHeader h3 {
@@ -65,15 +74,28 @@ table.ox-table {
     tr.groupFooter > th {
         padding: 4px 4px 32px 4px;
         vertical-align: top;
+        border: none;
     }
 
-    tr.data-row,
-    tr.start-row {
-        border-top: 1px solid @border-color;
-    }
+
 
     th {
         text-align: left;
+    }
+}
+
+table.ox-table.selectable {
+    tr:not(.groupFooter):not(.groupHeader):hover {
+        background-color: @accent-color;
+        text-decoration: none;
+        cursor: pointer;
+
+        td {
+            color: @table-background-color;
+        }
+        th {
+            cursor: default;
+        }
     }
 }
 
@@ -215,9 +237,5 @@ table.ox-table5 {
 
     th, td {
         padding: 4px;
-    }
-
-    td:has(> input) {
-        padding: 0;
     }
 }
