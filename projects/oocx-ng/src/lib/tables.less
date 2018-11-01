@@ -76,3 +76,148 @@ table.ox-table {
         text-align: left;
     }
 }
+
+table.ox-table2 {
+
+    margin-top: 8px;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    th {
+        text-align: left;
+        padding: 4px;
+    }
+
+    td {
+        padding: 2px 8px;
+    }
+
+    tr:hover {
+        background-color: @accent-color;
+        color: @table-background-color;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    tr:first-child:hover {
+        background-color: transparent;
+        color: @font-color;
+    }
+
+}
+
+table.ox-table3 {
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-top: 0.75em;
+        border: 0 none;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+
+    }
+
+    table, thead, tbody, th, td, tr {
+        overflow: hidden;
+    }
+
+    th {
+        font-size: 1.2em;
+        text-align: left;
+        border: none 0px;
+        padding: 8px 4px;
+        background-color: @table-background-color;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    td {
+        padding: 8px 4px;
+        border: 0 none;
+    }
+
+    td.actions {
+        text-align: left;
+        padding: 0 0 0 4px;
+        border-top: 1px solid @table-background-color;
+        background: @table-background-color;
+    }
+
+    td.actions a {
+        padding: 4px 8px;
+        margin: 0 0 0 4px;
+    }
+
+    tr:nth-child(2n + 1) {
+        background-color: @table-alternating-background-color;
+    }
+}
+
+table.ox-table4 {
+    margin: 8px 0 16px 0;
+    padding: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    th, td {
+        font-family: 'Segoe UI', 'San Francisco', 'Roboto', sans-serif;
+        font-size: 10pt;
+        border: 1px solid @teritary-background-color;;
+        padding: 4px;
+    }
+
+    th {
+        font-size: 8pt;
+        text-align: left;
+        background: @secondary-background-color;
+    }
+}
+
+table.ox-table5 {
+    margin: 8px 0 16px 0;
+    padding: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    min-width: 1280px;
+
+    input, th, td, label, ox-input-number {
+        font-family: 'Segoe UI', 'San Francisco', 'Roboto', sans-serif;
+        font-size: 10pt;
+    }
+
+    th {
+        font-size: 8pt;
+        text-align: left;
+        background: @secondary-background-color;
+        user-select: none;
+    }
+
+    tr.top th {
+        text-align: center;
+    }
+
+    tr.group-separator {
+        height: 16px;
+    }
+
+    td > * {
+        box-sizing: border-box;
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+
+    th, td {
+        border: 1px solid @teritary-background-color;
+    }
+
+    th, td {
+        padding: 4px;
+    }
+
+    td:has(> input) {
+        padding: 0;
+    }
+}
