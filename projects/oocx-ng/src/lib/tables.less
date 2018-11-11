@@ -63,7 +63,7 @@ table.ox-table {
     }
 
     tr.groupHeader {
-        background-color: @table-background-color !important;
+        background-color: @table-background-color;
         border: none;
     }
 
@@ -71,10 +71,15 @@ table.ox-table {
         margin: 0;
     }
 
+    tr.groupFooter {
+        background-color: @table-background-color;
+    }
+
     tr.groupFooter > th {
         padding: 4px 4px 32px 4px;
         vertical-align: top;
         border: none;
+
     }
 
 
