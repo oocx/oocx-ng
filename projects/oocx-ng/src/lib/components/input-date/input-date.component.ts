@@ -15,10 +15,10 @@ import { AutocompleteDateService } from '../../services/autocomplete-date.servic
 })
 export class InputDateComponent implements ControlValueAccessor {
 
-  @ViewChild('input')
+  @ViewChild('input', { static: true })
   public input: ElementRef<HTMLInputElement>;
 
-  @ViewChild('calendar')
+  @ViewChild('calendar', { static: false })
   public calendar: CalendarComponent;
 
   @Output()

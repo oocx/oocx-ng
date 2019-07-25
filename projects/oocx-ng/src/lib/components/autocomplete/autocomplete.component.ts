@@ -48,13 +48,13 @@ export class AutocompleteComponent implements AfterContentInit {
 
     public template: TemplateRef<{}>;
 
-    @ContentChild(TemplateRef)
+    @ContentChild(TemplateRef, { static: false })
     public content: TemplateRef<{}>;
 
-    @ViewChild('input')
+    @ViewChild('input', { static: true })
     public input: ElementRef;
 
-    @ViewChild('defaultTemplate')
+    @ViewChild('defaultTemplate', { static: true })
     public defaultTemplate: TemplateRef<{}>;
 
     @ViewChildren('listItem')
