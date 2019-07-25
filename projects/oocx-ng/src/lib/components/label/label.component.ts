@@ -1,7 +1,6 @@
 import { Component, Input, HostBinding, ElementRef } from '@angular/core';
-import { AfterContentInit } from '@angular/core/src/metadata/lifecycle_hooks';
+import { AfterContentInit } from '@angular/core';
 
-import { LabelDirective } from '../../directives/label.directive';
 import { LabelIdGeneratorService } from '../../services/label-id-generator.service';
 @Component({
   selector: 'ox-label',
