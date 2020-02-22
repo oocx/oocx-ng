@@ -15,9 +15,15 @@ steps:
 - script: |
     npm install -g @angular/cli
     npm ci
-    ng build --prod
-    ng build oocx-ng
-  displayName: 'npm install and build'
+  displayName: 'npm install'
+
+- script: |
+    ng build oocx-ng --prod
+  displayName: 'build library'
+
+- script: |
+    ng build oocx-ng-demo --prod
+  displayName: 'build demo'
 
 - script: |
     ng test oocx-ng --watch=false --code-coverage --browsers=ChromeHeadless
