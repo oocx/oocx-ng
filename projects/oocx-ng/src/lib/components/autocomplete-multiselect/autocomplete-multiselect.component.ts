@@ -57,7 +57,7 @@ export class AutocompleteMultiselectComponent implements AfterContentInit {
 
     public template: TemplateRef<{}>;
 
-    @ContentChild(TemplateRef, { static: false })
+    @ContentChild(TemplateRef)
     public content: TemplateRef<{}>;
 
     @ViewChild('input', { static: true })

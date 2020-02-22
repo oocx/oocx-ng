@@ -18,7 +18,7 @@ export class InputDateComponent implements ControlValueAccessor {
   @ViewChild('input', { static: true })
   public input: ElementRef<HTMLInputElement>;
 
-  @ViewChild('calendar', { static: false })
+  @ViewChild('calendar')
   public calendar: CalendarComponent;
 
   @Output()
