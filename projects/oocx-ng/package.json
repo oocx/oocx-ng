@@ -16,10 +16,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/oocx/oocx-ng.git"
-  },
-  "peerDependencies": {
-    "@angular/common": "^7.0.0",
-    "@angular/core": "^7.0.0",
-    "date-fns": "^2.0.0-alpha.18"
   }
 }
