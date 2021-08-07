@@ -136,7 +136,7 @@
       "prefix": "ox",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/oocx-ng/tsconfig.lib.json",
             "project": "projects/oocx-ng/ng-package.json"
