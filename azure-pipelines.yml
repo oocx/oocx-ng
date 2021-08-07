@@ -50,7 +50,7 @@ steps:
 
 - task: AzureCLI@1
   inputs:
-    azureSubscription: 'startliste-oocx-ng'
+    azureSubscription: 'startliste-oocx-ng-2021'
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage blob upload-batch --destination \$web --account-name oocxng --source dist/oocx-ng-demo'
   displayName: 'publish demo site to Azure'
